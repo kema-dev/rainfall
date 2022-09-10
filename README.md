@@ -1,3 +1,10 @@
+<p align=center>
+  <img alt="Project's status" src="https://img.shields.io/badge/Status-Stall-red">
+  <img alt="Project's focus" src="https://img.shields.io/badge/Focus-Cybersecurity-blue">
+</p>
+
+# rainfall
+
 <!-- PROJECT LOGO -->
 <!-- <div align="center">
   <a>
