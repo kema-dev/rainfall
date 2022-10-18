@@ -6,7 +6,7 @@ level0's password: `level0`
 
 1. examinate existing files and permissions
 
-```shell
+```bash
 ls -la
 ```
 
@@ -14,7 +14,7 @@ c file shows that the level0 executable belongs to level1, privilege escalation 
 
 2. get the executable (from an external device), decompile it using [ghidra](https://github.com/NationalSecurityAgency/ghidra) and examine the resulting code
 
-```shell
+```bash
 scp -P 4242 level0@<host>:level0 .
 ```
 
@@ -22,13 +22,13 @@ shows `iVar1 = atoi(*(char **)(param_2 + 4)); if (iVar1 == 0x1a7) {` to prevent 
 
 3. send a proper arguments to the executable and get a shell (0x1a7 in hex is 423 in decimal)
 
-```shell
+```bash
 ./level0 423
 ```
 
 4. get the flag
 
-```shell
+```bash
 whoami
 cat /home/user/level1/.pass
 ```
